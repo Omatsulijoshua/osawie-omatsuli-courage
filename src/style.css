@@ -1950,3 +1950,367 @@ a:hover {
     flex-direction: column;
   }
 }
+
+/* Donation & Contact Pages Custom Styling */
+.donation-hero-section {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.donation-hero-title {
+  font-family: var(--font-family-title);
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.donation-hero-desc {
+  font-size: 17px;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.donation-form-section {
+  padding: 50px 0;
+}
+
+.donation-grid {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 40px;
+}
+
+.donation-panel,
+.donation-info-panel,
+.contact-form-panel,
+.contact-info-panel {
+  background-color: #ffffff;
+}
+
+.panel-heading {
+  font-family: var(--font-family-title);
+  font-size: 24px;
+  font-weight: 700;
+  color: #111111;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.frequency-toggle {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.freq-btn,
+.amount-btn {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e0;
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: var(--text-light);
+  flex-grow: 1;
+  text-align: center;
+}
+
+.freq-btn.active,
+.amount-btn.active {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  border-color: var(--primary-blue);
+}
+
+.amount-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 600px) {
+  .amount-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.custom-amount-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  grid-column: span 2;
+}
+
+.currency-symbol {
+  position: absolute;
+  left: 12px;
+  font-weight: 700;
+  color: var(--text-light);
+  font-size: 16px;
+}
+
+.custom-amount-input {
+  padding: 12px 12px 12px 24px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+  outline: none;
+}
+
+.custom-amount-input:focus {
+  border-color: var(--primary-blue);
+}
+
+.donor-details-form,
+.email-setup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-grow: 1;
+  min-width: 200px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #444444;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  font-size: 14.5px;
+  font-family: inherit;
+  outline: none;
+  background-color: #ffffff;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--primary-blue);
+}
+
+.submit-donation-btn {
+  background-color: #e5243b;
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s;
+}
+
+.submit-donation-btn:hover {
+  background-color: #c5192d;
+}
+
+.payment-methods-row {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 15px;
+  flex-wrap: wrap;
+}
+
+.payment-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.pay-icon-text {
+  background-color: #f7f9fa;
+  border: 1px solid #cbd5e0;
+  padding: 3px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-light);
+  border-radius: 3px;
+}
+
+.allocation-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.allocation-card {
+  display: flex;
+  gap: 15px;
+  padding: 18px;
+  background-color: var(--bg-light);
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+}
+
+.allocation-percent {
+  font-family: var(--font-family-title);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  line-height: 1;
+  min-width: 60px;
+}
+
+.allocation-details h4 {
+  font-family: var(--font-family-title);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.allocation-details p {
+  font-size: 12.5px;
+  color: var(--text-light);
+  line-height: 1.4;
+}
+
+/* Contact Page Specific Styles */
+.contact-hero-section {
+  background-color: var(--bg-dark-gray);
+  color: #ffffff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact-hero-title {
+  font-family: var(--font-family-title);
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.contact-hero-desc {
+  font-size: 17px;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.contact-form-section {
+  padding: 50px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 58% 42%;
+  gap: 40px;
+}
+
+.email-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.email-btn {
+  border: none;
+  padding: 14px 20px;
+  font-size: 13.5px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+  flex-grow: 1;
+  min-width: 180px;
+}
+
+.gmail-btn {
+  background-color: #ea4335;
+  color: #ffffff;
+}
+
+.gmail-btn:hover {
+  background-color: #d33828;
+}
+
+.mailto-btn {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+}
+
+.mailto-btn:hover {
+  background-color: #005a96;
+}
+
+.contact-details-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--bg-light);
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+}
+
+.contact-details-box p {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 240px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments for new pages */
+@media (max-width: 900px) {
+  .donation-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
